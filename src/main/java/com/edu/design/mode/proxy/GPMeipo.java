@@ -21,8 +21,7 @@ public class GPMeipo implements GPInvocationHandler {
     }
 
     private void before(){
-        System.out.println("我是媒婆，我要给你找对象，现在已经确认你的需求");
-        System.out.println("开始物色");
+        System.out.println("我是媒婆,我要帮你介绍对象");
     }
 
     private void after(){
