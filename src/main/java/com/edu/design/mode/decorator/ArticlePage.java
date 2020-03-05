@@ -1,7 +1,7 @@
 package com.edu.design.mode.decorator;
 
-public class ArticleNaviBar extends NaviBarDecorator {
-    public ArticleNaviBar(NaviBar naviBar) {
+public class ArticlePage extends NaviBarDecorator {
+    public ArticlePage(NaviBar naviBar) {
         super(naviBar);
     }
 

@@ -5,11 +5,11 @@ public class DecoratorTest {
        NaviBar naviBar = new HomePage();
         /*naviBar.show();*/
 
-        ShoppingNaviBar shoppingNaviBar = new ShoppingNaviBar(naviBar);
-        shoppingNaviBar.show();
+        ShoppingPage shopping = new ShoppingPage(naviBar);
+        shopping.show();
 
-        ArticleNaviBar articleNaviBar = new ArticleNaviBar(naviBar);
-        articleNaviBar.show();
+        ArticlePage article = new ArticlePage(naviBar);
+        article.show();
 
     }
 }

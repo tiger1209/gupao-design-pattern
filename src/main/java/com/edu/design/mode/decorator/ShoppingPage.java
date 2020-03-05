@@ -1,8 +1,8 @@
 package com.edu.design.mode.decorator;
 
-public class ShoppingNaviBar extends NaviBarDecorator {
+public class ShoppingPage extends NaviBarDecorator {
 
-    public ShoppingNaviBar(NaviBar naviBar) {
+    public ShoppingPage(NaviBar naviBar) {
         super(naviBar);
     }
 
