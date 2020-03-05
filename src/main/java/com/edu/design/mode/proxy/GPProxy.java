@@ -12,10 +12,8 @@ import java.util.Map;
 
 
 public class GPProxy {
-
     public static final String ln = "\r\n";
     private static Map<Class, Class> mappings = new HashMap<Class, Class>();
-
     static {
         mappings.put(int.class, Integer.class);
     }
