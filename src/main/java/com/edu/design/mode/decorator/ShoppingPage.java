@@ -1,17 +1,25 @@
 package com.edu.design.mode.decorator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShoppingPage extends NaviBarDecorator {
 
     public ShoppingPage(NaviBar naviBar) {
         super(naviBar);
     }
 
-    private void otherPage(){
-        System.out.println("新增功能- 商城页面");
+    private Menu otherPage(){
+        Menu menu = new Menu();
+        menu.setName("商城");
+        menu.setUrl("/shopping");
+        return menu;
     }
     @Override
-    public void show() {
-        super.show();
-        otherPage();
+    public List<Menu> show() {
+        List menus = new ArrayList();
+        menus.add(otherPage());
+        menus.add(super.show());
+        return menus;
     }
 }
