@@ -24,8 +24,8 @@ public class DecoratorTest {
 
         System.out.println("--------输出会员登录后的页面----------------");
 
-        ShoppingPage shopping = new ShoppingPage(naviBar);
-        List<Menu> ms = shopping.show();
+        VIPNaviPage vipNaviPage = new VIPNaviPage(naviBar);
+        List<Menu> ms = vipNaviPage.show();
         Iterator it = ms.iterator();
         while (it.hasNext()){
             System.out.println(JSONObject.toJSON(it.next()));

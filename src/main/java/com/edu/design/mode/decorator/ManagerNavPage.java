@@ -3,22 +3,22 @@ package com.edu.design.mode.decorator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArticlePage extends NaviBarDecorator {
-    public ArticlePage(NaviBar naviBar) {
+public class ManagerNavPage extends NaviBarDecorator {
+    public ManagerNavPage(NaviBar naviBar) {
         super(naviBar);
     }
 
-    private Menu articleShow(){
+    private Menu mangerPage(){
         Menu menu = new Menu();
-        menu.setName("文章");
-        menu.setUrl("/article");
+        menu.setName("管理");
+        menu.setUrl("/manger");
         return menu;
     };
 
     @Override
     public List<Menu> show() {
         List mList = new ArrayList<>();
-        mList.add(articleShow());
+        mList.add(mangerPage());
         mList.add(super.show());
 
         return mList;
