@@ -1,6 +1,8 @@
 package adapter.demo.passport.adapterv2;
 
-import com.gupaoedu.vip.pattern.adapter.demo.passport.ResultMsg;
+import adapter.demo.passport.ResultMsg;
+import adapter.demo.passport.adapterv2.*;
+import adapter.demo.passport.adapterv2.adapters.*;
 
 /**
  * Created by Tom.

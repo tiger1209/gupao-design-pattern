@@ -1,7 +1,8 @@
 package adapter.demo.passport.adapterv3;
 
-import com.gupaoedu.vip.pattern.adapter.demo.passport.adapterv3.adapters.LoginForQQAdapter;
-import com.gupaoedu.vip.pattern.adapter.demo.passport.adapterv3.adapters.LoginForWechatAdapter;
+
+import adapter.demo.passport.adapterv3.adapters.LoginForQQAdapter;
+import adapter.demo.passport.adapterv3.adapters.LoginForWechatAdapter;
 
 import java.util.HashMap;
 import java.util.Map;

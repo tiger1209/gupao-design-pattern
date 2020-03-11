@@ -31,10 +31,5 @@ public class DecoratorTest {
             System.out.println(JSONObject.toJSON(it.next()));
         }
 
-       /* ArticlePage article = new ArticlePage(naviBar);
-        article.show();
-*/
-
-
     }
 }
