@@ -12,6 +12,6 @@ public class Test {
 
        ILoginStrategy iLoginStrategy = LoginStrategy.getSyncStrategy("0");
         ResultMsg resultMsg = iLoginStrategy.login("afasdsfdsd");
-        System.out.println(resultMsg.getCode());
+
     }
 }

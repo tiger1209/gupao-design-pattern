@@ -12,14 +12,16 @@ public class LoginForQQAdapter extends AbstraceAdapter implements ILoginStrategy
     }
 
     public ResultMsg login(String id, Object adapter) {
-        if(!support(adapter)){return null;}
+        if(!support(adapter)){
+            return null;}
         //accesseToken
         //time
+        System.out.println("登录方式:QQ,登录 ID:"+id);
         return super.loginForRegist(id,null);
 
     }
 
     public ResultMsg login(String id) {
-        return this.login(id,LoginForQQAdapter.class);
+        return this.login(id,new LoginForQQAdapter());
     }
 }

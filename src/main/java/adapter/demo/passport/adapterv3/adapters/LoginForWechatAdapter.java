@@ -12,11 +12,12 @@ public class LoginForWechatAdapter extends AbstraceAdapter implements ILoginStra
     }
 
     public ResultMsg login(String id, Object adapter) {
+        System.out.println("登录方式:WeChat,登录 WeChat:"+id);
         return super.loginForRegist(id,null);
     }
 
 
     public ResultMsg login(String id) {
-        return this.login(id,LoginForWechatAdapter.class);
+        return this.login(id,new LoginForWechatAdapter());
     }
 }
